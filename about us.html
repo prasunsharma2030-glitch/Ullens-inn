@@ -7,50 +7,64 @@
   <style>
     body {
       font-family: 'Comic Sans MS', cursive, sans-serif;
-      background-color: #666666;
+      background-color: #4f4f4f;
       margin: 0;
       padding: 5px;
-      color: #ffffff;
+      color: #f8f8f8;
     }
+
     header {
       text-align: center;
       background-color: #2b2e33;
       color: white;
       padding: 50px 20px;
     }
+
     header h1 {
       font-size: 3em;
       margin: 0;
     }
+
     main {
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
     }
+
     h2 {
       color: #ececec;
       margin-top: 30px;
       border-bottom: 2px solid #0c1830;
       padding-bottom: 5px;
     }
+
     p {
       line-height: 1.6;
       margin: 15px 0;
     }
+
     .team {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
     }
+
     .team-member {
       background-color: #a5a5a5;
       border-radius: 10px;
       padding: 10px;
       text-align: center;
       width: 150px;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
     }
+
+    .team-member:hover {
+      background-color: #8c8c8c;
+      transform: scale(1.05);
+    }
+
     .team-member img {
       width: 100px;
       height: 100px;
@@ -58,32 +72,50 @@
       object-fit: cover;
       margin-bottom: 10px;
     }
+
     footer {
       text-align: center;
       padding: 20px;
       background-color: #707883;
-      color: rgb(0, 0, 0);
+      color: #000000;
       margin-top: 40px;
     }
+
     img.fun-img {
       width: 100%;
       border-radius: 10px;
       margin: 15px 0;
     }
- </style>
+
+    marquee {
+      background-color: #2361a8;
+      color: #e6e6e6;
+      padding: 5px;
+      font-weight: bold;
+    }
+
+    /* 📱 Mobile Friendly Design */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      .team-member {
+        width: 120px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-
   <header>
-  <marquee behavior="scroll" direction="left" scrollamount="5" style="background-color:#2361a8; color:#e6e6e6; padding:5px; font-weight:bold;">
-    Welcome to Ullens Inn! Enjoy your stay & have fun! 🏨✨<tag.
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+      Welcome to Ullens Inn! Enjoy your stay & have fun! 🏨✨
+    </marquee>
 
-
-  </marquee>
-  <h1>Welcome to Ullens Inn!</h1>
-  <p>Where comfort meets fun and adventure 🏨✨</p> <</header>
-
+    <h1>Welcome to Ullens Inn!</h1>
+    <p>Where comfort meets fun and adventure 🏨✨</p>
+  </header>
 
   <main>
     <section>
@@ -93,9 +125,8 @@
         We love having people from all over the world visit us.  
         Whether you're here for a holiday, family trip, or just to chill, we want you to have the best time ever!
       </p>
-        <img src="o.png"alt="Hotel Lobby" class="fun-img">
+      <img src="o.png" alt="Hotel Lobby" class="fun-img">
     </section>
-
 
     <section>
       <h2>Our Mission</h2>
@@ -106,33 +137,31 @@
       </p>
     </section>
 
-
     <section>
       <h2>Meet Our Team</h2>
       <div class="team">
         <div class="team-member">
-       
+          <img src="nischit.jpg" alt="Nischit">
           <strong>Nischit</strong>
         </div>
         <div class="team-member">
-         
+          <img src="aagam.jpg" alt="Aagam">
           <strong>Aagam</strong>
         </div>
         <div class="team-member">
-         
+          <img src="arnav.jpg" alt="Arnav">
           <strong>Arnav</strong>
         </div>
         <div class="team-member">
-         
+          <img src="prasun.jpg" alt="Prasun">
           <strong>Prasun</strong>
         </div>
         <div class="team-member">
-         
+          <img src="nishkarsa.jpg" alt="Nishkarsa">
           <strong>Nishkarsa</strong>
         </div>
       </div>
     </section>
-
 
     <section>
       <h2>Contact Us</h2>
@@ -145,14 +174,9 @@
     </section>
   </main>
 
-
   <footer>
     <p>© 2025 Ullens Inn — Made with ❤️ by our team</p>
   </footer>
 
-
 </body>
 </html>
-
-
-
